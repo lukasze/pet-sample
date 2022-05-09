@@ -1,0 +1,37 @@
+{
+  "applications": "*",
+  "changelogDate": "20220509095329",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "owner",
+  "fields": [
+    {
+      "fieldName": "firstName",
+      "fieldType": "String",
+      "javadoc": "The firstname attribute."
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "javadoc": "The Employee entity.",
+  "jpaMetamodelFiltering": false,
+  "name": "Owner",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "pet",
+      "otherEntityRelationshipName": "owner",
+      "relationshipName": "pet",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}
